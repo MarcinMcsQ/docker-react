@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t marinc/docker-react -f Dockerfile.dev .  
+  - docker build -t marcin/docker-react -f Dockerfile.dev .  
 
 script:
   - docker run -e CI=true marcin/docker-react npm run test
